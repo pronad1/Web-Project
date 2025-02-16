@@ -7,27 +7,28 @@
     <title>Pixel Position</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body>
-    <div>
+<body class="bg-black text-white">
+    <div >
 
-        <nav class="flex justify-between items-center p-4">
+        <nav class="flex justify-between items-center py-4 border-b border-white/10">
             <div>
                 <a href="">
                     <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
                 </a>
             </div>
 
-            <div class="flex space-x-4">
-                <a href="">Job</a>
-                <a href="">Careers</a>
-                <a href="">Salaries</a>
-                <a href="">Companies</a>
+            <div class="space-x-6 front-bold">
+                <a href="#">Jobs</a>
+                <a href="#">Careers</a>
+                <a href="#">Salaries</a>
+                <a href="#">Companies</a>
             </div>
 
             <div>post a job</div>
+
         </nav>
 
-        <main>
+        <main class="mt-10">
             {{ $slot }}
         </main>
     </div>
