@@ -1,7 +1,7 @@
 <div class="p-4 bg-white/10 rounded-xl flex gap-x-6">
 <div>
 
-    <img src="http://picsum.photos/seed/3124324321/100/100" alt="">
+    <img src="http://picsum.photos/seed/{{ rand(0,100000)}}/100/100" alt="">
     
     {{-- <img src="{{ Vite::asset('resources/images/Plogo.svg') }}" alt="Logo" class="w-20 h-20"> --}}
 </div>
