@@ -6,10 +6,10 @@
     {{-- <img src="{{ Vite::asset('resources/images/Plogo.svg') }}" alt="Logo" class="w-20 h-20"> --}}
 </div>
     <div class="flex-1" >
-        <a href="#" class="self-start text-sm">Laracasts</a>
+        <a href="#" class="self-start text-sm  text-gray-500">Laracasts</a>
 
-        <h3>Laravel Developer</h3>
-        <p>Full Time - From $60,000</p>
+        <h3 class="font-bold text-lg">Laravel Developer</h3>
+        <p >Full Time - From $60,000</p>
 
     </div>
     <div>
