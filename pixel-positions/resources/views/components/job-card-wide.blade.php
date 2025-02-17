@@ -1,7 +1,7 @@
 <div class="p-4 bg-white/10 rounded-xl flex flex-col text-center">
-
+<div>
     <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
-
+</div>
     <div>
         <a href="#" class="self-start text-sm">Laracasts</a>
 
