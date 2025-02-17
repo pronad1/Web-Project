@@ -14,7 +14,7 @@
                     <x-tag>Tag</x-tag>
                 </div>
 
-                <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
+                <img src="{{ Vite::asset('resources/images/Plogo.svg') }}" alt="Logo" class="w-8 h-6">
             </div>
 
         </div>

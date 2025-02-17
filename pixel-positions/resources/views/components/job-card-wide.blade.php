@@ -1,6 +1,6 @@
 <div class="p-4 bg-white/10 rounded-xl flex flex-col text-center">
 <div>
-    <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
+    <img src="{{ Vite::asset('resources/images/Plogo.svg') }}" alt="Logo" class="w-8 h-6">
 </div>
     <div>
         <a href="#" class="self-start text-sm">Laracasts</a>
