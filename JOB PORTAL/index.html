@@ -1,0 +1,17 @@
+<?php
+session_start();
+include 'header.php'; 
+?>
+
+<main class="container">
+    <h1>Welcome to the Job Portal</h1>
+    <p>Find your dream job and connect with top companies.</p>
+
+    <?php if (isset($_SESSION['user'])): ?>
+        <a href="jobs.php" class="btn">Explore Jobs</a>
+    <?php else: ?>
+        <a href="register.php" class="btn">Get Started</a>
+    <?php endif; ?>
+</main>
+
+<?php include 'footer.php'; ?>

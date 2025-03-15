@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.container {
+    max-width: 986px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a, .auth-links a, .auth-links button {
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1c86ee;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
