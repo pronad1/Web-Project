@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($conn->query($sql) === true) {
         echo "Registration successful. <a href='login.php'>Login here</a>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -18,18 +18,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Signup</title>
 </head>
+
 <body>
     <h2>Signup</h2>
     <form action="" method="post">
-        <input type="text" name="name" placeholder="Full Name" required><br>
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="text" name="name" placeholder="Full Name" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
         <button type="submit">Register</button>
     </form>
     <p>Already registered? <a href="login.php">Login here</a></p>
 </body>
+
 </html>
