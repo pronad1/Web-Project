@@ -48,15 +48,26 @@ $conn->close();
 		</div>
 	</header>
 
+
 	<!-- Footer -->
 	<footer class="footer">
 		<div class="job-search">
 			<h2>Let's Find Your Next Job</h2>
 			<input type="text" placeholder="Web Developer...">
 		</div>
-		<p>&copy; <?php echo date('Y'); ?> Job
-			Portal. All rights reserved.</p>
+
+		<main>
+			<?php include 'feature.php'; ?>
+		</main>
+
+
+		<div>
+			<p>&copy; <?php echo date('Y'); ?>
+				Job Portal. All rights reserved.</p>
+		</div>
+
 	</footer>
+
 
 </body>
 

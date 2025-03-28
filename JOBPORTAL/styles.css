@@ -108,10 +108,5 @@ body {
 }
 
 .login-container{
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #000; /* Black background */
-    color: white;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-
+    justify-content: center;
 }

@@ -46,6 +46,10 @@
 			Portal. All rights reserved.</p>
 	</footer>
 
+	<main>
+		<?php include 'feature.php'; ?>
+	</main>
+	
 </body>
 
 </html>
