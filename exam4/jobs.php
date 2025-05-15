@@ -1,8 +1,5 @@
 <?php
-
 session_start();
-
-
 require_once("db.php");
 ?>
 <!DOCTYPE html>
@@ -22,52 +19,52 @@ require_once("db.php");
 <body class="hold-transition skin-green sidebar-mini">
   <div class="wrapper">
 
-    <header class="main-header">
+    <header>
+      <div class="nav-container">
+        <nav>
+          <a href="index.php" class="logo"><b>Job</b> Portal</a>
+          <div class="nav-links">
 
-      <a href="index.php" class="logo"><b>Job</b> Portal</a>
+            <ul>
+              <?php if (empty($_SESSION['id_user']) && empty($_SESSION['id_company'])) { ?>
+              <li>
+                <a href="login.php">Login</a>
+              </li>
+              <li>
+                <a href="sign-up.php">Sign Up</a>
+              </li>
+              <?php } else {
 
-      <nav class="navbar navbar-static-top">
-        <!-- Navbar Right Menu -->
-        <div class="navbar-custom-menu">
-          <ul class="nav navbar-nav">
-            <?php if (empty($_SESSION['id_user']) && empty($_SESSION['id_company'])) { ?>
-            <li>
-              <a href="login.php">Login</a>
-            </li>
-            <li>
-              <a href="sign-up.php">Sign Up</a>
-            </li>
-            <?php } else {
-
-                if (isset($_SESSION['id_user'])) {
-                    ?>
-            <li>
-              <a href="user/index.php">Dashboard</a>
-            </li>
-            <?php
-                } elseif (isset($_SESSION['id_company'])) {
-                    ?>
-            <li>
-              <a href="company/index.php">Dashboard</a>
-            </li>
-            <?php } ?>
-            <li>
-              <a href="logout.php">Logout</a>
-            </li>
-            <?php } ?>
-          </ul>
-        </div>
-      </nav>
+                  if (isset($_SESSION['id_user'])) {
+                      ?>
+              <li>
+                <a href="user/index.php">Dashboard</a>
+              </li>
+              <?php
+                  } elseif (isset($_SESSION['id_company'])) {
+                      ?>
+              <li>
+                <a href="company/index.php">Dashboard</a>
+              </li>
+              <?php } ?>
+              <li>
+                <a href="logout.php">Logout</a>
+              </li>
+              <?php } ?>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <div class="content" style="max-width: 50%">
-      
+
       <div class="col-md-12 latest-job margin-top-50 margin-bottom-20">
         <h1 class="text-center">Latest Jobs</h1>
       </div>
-      
 
-        <input type="text" id="live_search" class="form-control" placeholder="Search job" autocomplete="off">
+
+      <input type="text" id="live_search" class="form-control" placeholder="Search job" autocomplete="off">
 
 
     </div>
@@ -78,20 +75,21 @@ require_once("db.php");
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <script type="text/javascript">
+    $(document).ready(function() {
 
-    $(document).ready(function(){
-
-      $("#live_search").keyup(function(){
+      $("#live_search").keyup(function() {
 
         var input = $(this).val();
         //alert(input);
-        if(input != ""){
+        if (input != "") {
 
           $.ajax({
             url: "search.php",
             method: "POST",
-            data: {input: input},
-            success: function(data){
+            data: {
+              input: input
+            },
+            success: function(data) {
               $("#searchresult").html(data);
             }
           });
@@ -101,8 +99,9 @@ require_once("db.php");
         }
       });
     });
-
   </script>
 </body>
+
+</html>
 
 </html>

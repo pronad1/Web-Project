@@ -26,20 +26,20 @@ require_once("../db.php");
 
 <body class="hold-transition skin-green sidebar-mini">
     <div class="wrapper">
-
-        <header class="main-header">
-
-            <a href="index.php" class="logo"><b>Job</b> Portal</a>
-
-            <nav class="navbar navbar-static-top">
-                <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-
-                    </ul>
-                </div>
-            </nav>
+        <header>
+            <div class="nav-container">
+                <nav>
+                    <a href="index.php" class="logo"><b>Job</b> Portal</a>
+                    <div class="nav-links">
+                        <ul>
+                            <li>
+                                <a href="../jobs.php">Jobs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
-
         <div class="content-wrapper" style="margin-left: 0px;">
 
             <section id="candidates" class="content-header">
@@ -65,7 +65,6 @@ require_once("../db.php");
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-9 bg-white padding-2">
                             <h2><i>Account Settings</i></h2>
                             <p>In this section you can change your name and account password</p>

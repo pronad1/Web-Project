@@ -1,12 +1,10 @@
 <?php
-
 session_start();
 
 if (empty($_SESSION['id_user'])) {
     header("Location: ../index.php");
     exit();
 }
-
 require_once("../db.php");
 ?>
 <!DOCTYPE html>
@@ -20,30 +18,26 @@ require_once("../db.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
     <link rel="stylesheet" href="../css/custom.css">
 </head>
 
 <body class="hold-transition skin-green sidebar-mini">
     <div class="wrapper">
-
-        <header class="main-header">
-
-            <a href="index.php" class="logo"><b>Job</b> Portal</a>
-            <nav class="navbar navbar-static-top">
-                <!-- Navbar Right Menu -->
-                <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="../jobs.php">Jobs</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <header>
+            <div class="nav-container">
+                <nav>
+                    <a href="index.php" class="logo"><b>Job</b> Portal</a>
+                    <div class="nav-links">
+                        <ul>
+                            <li>
+                                <a href="../jobs.php">Jobs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
-
         <div class="content-wrapper" style="margin-left: 0px;">
-
             <section id="candidates" class="content-header">
                 <div class="container">
                     <div class="row">
@@ -100,8 +94,6 @@ if ($result->num_rows > 0) {
                                                 value="<?php echo $row['email']; ?>"
                                                 readonly>
                                         </div>
-
-
                                     </div>
                                     <div class="col-md-6 latest-job ">
                                         <div class="form-group">
@@ -115,12 +107,10 @@ if ($result->num_rows > 0) {
                                             <textarea class="form-control input-lg" rows="4" name="skills"
                                                 onkeypress="return validateName(event);"><?php echo $row['skills']; ?></textarea>
                                         </div>
-
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-flat btn-success">Update
                                                 Profile</button>
                                         </div>
-
                                     </div>
                                 </div>
                                 <?php

@@ -1,9 +1,6 @@
 <?php
-
 session_start();
-
 require_once("db.php");
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,15 +8,12 @@ require_once("db.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job Portal</title>
     <link rel="stylesheet" href="css/custom.css">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="css/AdminLTE.min.css">
-    <link rel="stylesheet" href="css/_all-skins.min.css">
-
 </head>
 
 <body>
@@ -65,7 +59,7 @@ require_once("db.php");
                 </nav>
             </div>
         </header>
-        <div class="content-wrapper" style="margin-left: 0px;">
+        <div style="margin-left: 0px;">
 
             <section class="content-header bg-main">
                 <div class="container">
@@ -207,7 +201,6 @@ if ($result->num_rows > 0) {
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-xs-6">
-                            <!-- small box -->
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <?php
@@ -252,9 +245,8 @@ if ($result->num_rows > 0) {
                             </div>
                         </div>
 
-                        <!-- ./col -->
+
                         <div class="col-lg-3 col-xs-6">
-                            <!-- small box -->
                             <div class="small-box bg-red">
                                 <div class="inner">
                                     <?php
