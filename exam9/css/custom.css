@@ -1,0 +1,188 @@
+html,body{
+  height:100%;
+  margin:0;
+  padding:0
+}
+
+.bg-main{
+background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ai.jpeg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 60vh;
+  border: 3px solid #A8D5BA;
+  box-shadow: 0 1px 8px rgba(44, 62, 80, 0.10);
+  display: flex;
+  align-items: center;
+}
+
+.index-head{
+font-family:Georgia, 'Times New Roman', Times, serif;
+padding:10%;
+color:#b5ed27;
+line-height:150%
+}
+
+.index-head>h1{
+  font-size:60px
+}
+
+.index-head>p{
+  font-size:32px
+}
+
+.index-head>p>a{
+  margin-top:20px
+}
+
+.latest-job>h1{
+  font-size:60px
+}
+
+.about-text>p{
+  font-size:17px;
+  line-height:150%
+}
+
+.bg-white{
+  background-color:#fff
+}
+
+.margin-right-10{
+  margin-right:10px
+}
+
+.bg-c-yellow{
+  background-color:#FFC
+}
+
+.color-red{
+  color:red
+}
+
+.hide-me{display:none}
+
+.wrapper{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column
+}
+
+.content-wrapper{
+  margin-top:50px;
+  flex:1;width:100%;
+  padding:20px 0
+}
+
+.main-footer{
+  background-color:#222d32;
+  color:#b8c7ce;padding:20px 0;
+  font-size:14px;
+  text-align:center;
+  border-top:1px solid #ddd
+}
+
+.main-footer a{
+  color:#f39c12;
+  text-decoration:none
+}
+
+.main-footer a:hover{
+  color:#e0b95b;
+  text-decoration:underline
+}
+
+.navbar-default{
+  background-color:#4da600!important;
+  border-bottom:2px solid #05083c!important;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1)
+}
+
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a{color:#fff!important}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-brand:hover{color:#2b1155!important}
+
+nav .logo,.logo-bg{all:unset}
+
+.rating-form{margin-top:10px}
+
+.rating-form .form-group{margin-right:10px}
+
+.rating-form input[type="text"]{width:200px}
+
+
+.latest-job .row {
+    background-color: #abdc7b;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.latest-job .row:hover {
+    background-color: #8b7eff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latest-job h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.latest-job .row p {
+    margin-bottom: 5px;
+    color: #6c757d;
+}
+
+/* -- STATISTICS SECTION STYLES -- */
+
+#statistics .small-box {
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    margin: 0 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+#statistics .small-box > .inner {
+    padding: 10px;
+    text-align: center;
+}
+
+#statistics .small-box h3 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+    color: #fff;
+}
+
+#statistics .small-box p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#statistics .small-box .icon {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+#statistics .small-box.bg-aqua {
+    background-color: #00c0ef !important;
+}
+
+#statistics .small-box.bg-green {
+    background-color: #00a65a !important;
+}
+
+#statistics .small-box.bg-red {
+    background-color: #dd4b39 !important;
+}
+
+#statistics .row > div {
+    padding: 0 15px;
+}
