@@ -1,4 +1,3 @@
-
 # 🧑‍💼 Job Portal Web Application
 
 A complete **Job Portal Web Application** built from scratch using **HTML5, CSS3, Core PHP (Procedural)**, and **MySQL**.
